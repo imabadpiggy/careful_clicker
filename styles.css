@@ -1,155 +1,181 @@
-.circle {
-  position: relative;
-  height:300px;
-  width:300px;
-  border-radius:50%;
-  border:2px solid black;
-  margin: auto;
-  background-color: #8FBC94;
-  font-family: "Lucida Console", "Courier New", monospace;
-  text-align: center;
-  user-select: none;
-  font-size="3";
-}
-.gem_btn {
-  position: relative;
-  height:35px;
-  width:35px;
-  border-radius:50%;
-  border:2px solid black;
-  margin: auto;
-  background-color: #009999;
-  font-family: "Lucida Console", "Courier New", monospace;
-  user-select: none
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+#container {
+    display: grid;
+    grid-template-areas: 'clicker1 clicker clicker2' 'exp ath gem';
+    justify-items: center;
+    align-items: center;
 }
 
-.core {
-  position: relative;
-  margin: auto;
-  font-size: 20;
-  font-color: #FFFFFF;
-  font-family: "Lucida Console", "Courier New", monospace;
-  text-align: center;
-}
-.info_btn {
-width: 20px;
-height: 20px;
-border-radius: 50%;
-border: 2px solid black;
-background-color: #881111;
-}
-.msg {
-font-color: #FF0000;
-font-size: 10;
-  user-select: none;
-}
-.msg2 {
-  user-select: none;
-}
-.gem_info {
-width: 10px;
-height: 10px;
-border-radius: 50%;
-border: 2px solid black;
-background-color: #881111;
-left: 10px;
-}
-.exp_btn {
-  position: relative;
-  height:35px;
-  width:35px;
-  border-radius:50%;
-  border:2px solid black;
-  margin: auto;
-  background-color: #009999;
-  font-family: "Lucida Console", "Courier New", monospace;
-  user-select: none
-}
-.exp_info {
-width: 10px;
-height: 10px;
-border-radius: 50%;
-border: 2px solid black;
-background-color: #881111;
-left: 10px;
-}
-.ath_btn {
-  position: absolute;
-  height:35px;
-  width:35px;
-  border-radius:50%;
-  border:2px solid black;
-  background-color: #009999;
-  font-family: "Lucida Console", "Courier New", monospace;
-  user-select: none;
-  top: 72%;
-  left: 618px;
-}
-.ath_info {
-width: 10px;
-height: 10px;
-border-radius: 50%;
-border: 2px solid black;
-background-color: #881111;
-left: 10px;
-position: absolute;
-}
-.exp_border {
-  background-color: #00FFFF;
-  width: 200px;
-  height: 90px;
-  border: 2px solid black;
-  border-radius: 15%;
-  position: relative;
-}
-.exp_bar {
-  width: 0px;
-  height: 60px;
-  background-color: #000088;
-  position: absolute;
-  top: 17%;
+#circle {
+    grid-area: clicker;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    border: 20px solid rgb(119, 113, 113);
+    margin: auto;
+    background-color: #ec3939c6;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    user-select: none;
+    font-size: "3";
 }
 
-.options_btn {
-position: fixed;
-width: 100px;
-height: 20px;
-background-color: #000000;
-border: 3px solid white;
-border-radius: 5px;
-right: 40px;
-bottom: 40px;
-transition: border 1s, background-color 1s, width 1s ease 1s, height 1s ease 1s, transform 1s ease 1s, border-radius 1s ease 1s;
+#gem_btn {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(119, 113, 113);
+    background-color: #638ddc;
+    font-family: "Lucida Console", "Courier New", monospace;
+    user-select: none;
+    justify-self: left;
+    grid-area: gem;
 }
 
-.arrow_prt_1 {
-width: 15px;
-height: 3px;
-transform: rotate(45deg);
-position: relative;
-background-color: #FFFFFF;
-left: 46px;
-top: 8px;
-}
-.arrow_prt_2 {
-width: 15px;
-height: 3px;
-transform: rotate(-45deg);
-position: relative;
-background-color: #FFFFFF;
-left: 37px;
-top: 5px;
+#core {
+    position: relative;
+    margin: auto;
+    font-size: 20;
+    color: #FFFFFF;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
 }
 
-
-.black_element {
-position: fixed;
-right: 150px;
-bottom: 195px;
-width: 25px;
-height: 25px;
-display: none;
-z-index:99;
-transform: rotate(460deg);
+#info_btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #881111;
 }
 
+#msg {
+    color: #FF0000;
+    font-size: 10;
+    user-select: none;
+}
+
+#msg2 {
+    user-select: none;
+    margin: 0%;
+}
+
+#gem_info {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #881111;
+    left: 10px;
+}
+
+#exp_btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(119, 113, 113);
+    background-color: #16b93c;
+    font-family: "Lucida Console", "Courier New", monospace;
+    user-select: none;
+    justify-self: right;
+    grid-area: exp;
+}
+
+#exp_info {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #881111;
+    left: 10px;
+}
+
+#ath_btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(119, 113, 113);
+    background-color: #ef9426;
+    font-family: "Lucida Console", "Courier New", monospace;
+    user-select: none;
+    grid-area: ath;
+}
+
+#ath_info {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #881111;
+}
+
+#exp_border {
+    background-color: #00FFFF;
+    width: 200px;
+    height: 90px;
+    border: 2px solid black;
+    border-radius: 15%;
+    position: relative;
+}
+
+#exp_bar {
+    width: 0px;
+    height: 60px;
+    background-color: #000088;
+    position: absolute;
+    top: 17%;
+}
+
+#options_btn {
+    position: fixed;
+    width: 100px;
+    height: 20px;
+    background-color: #000000;
+    border: 3px solid white;
+    border-radius: 5px;
+    right: 40px;
+    bottom: 40px;
+    transition: border 1s, background-color 1s, width 1s ease 1s, height 1s ease 1s, transform 1s ease 1s, border-radius 1s ease 1s;
+}
+
+#arrow_prt_1 {
+    width: 15px;
+    height: 3px;
+    transform: rotate(45deg);
+    position: relative;
+    background-color: #FFFFFF;
+    left: 46px;
+    top: 8px;
+}
+
+#arrow_prt_2 {
+    width: 15px;
+    height: 3px;
+    transform: rotate(-45deg);
+    position: relative;
+    background-color: #FFFFFF;
+    left: 37px;
+    top: 5px;
+}
+
+#black_element {
+    position: fixed;
+    right: 150px;
+    bottom: 195px;
+    width: 25px;
+    height: 25px;
+    display: none;
+    z-index: 99;
+    transform: rotate(460deg);
+}
+
+#gem {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 0.25%;
+    width: max-content;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
