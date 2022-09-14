@@ -19,7 +19,7 @@ let ath_info = document.getElementById("ath_info");
 let circle = document.getElementById("circle");
 let exp_btn = document.getElementById("exp_btn");
 let exp_bar = document.getElementById("exp_bar");
-info_btn.addEventListener("click", function() {
+info_btn.addEventListener("click", () => {
     toggle_info("The Button, One and Only, Here's a Challenge, Beat the Game Without Clicking it. click for enjoyment", "info", 1);
 }, false);
 
@@ -116,7 +116,7 @@ function gem_check() {
     let chance = Math.floor(Math.random() * 50);
     if (chance > 47) {
         gems++;
-        document.getElementById("gems").innerText = `Gems: ${gems}`;
+        document.getElementById("gems").innerText = `${gems}`;
     }
 }
 
