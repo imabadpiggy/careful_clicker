@@ -9,8 +9,8 @@
 #circle {
     grid-area: clicker;
     position: relative;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     border-radius: 100%;
     border: 20px solid rgb(119, 113, 113);
     margin: auto;
