@@ -185,10 +185,17 @@ body {
 
 #gem {
     font-size: 50px;
+    color: white;
 }
 
 #smile {
     font-size: 50px;
+    color: white;
+}
+
+#pillar {
+    font-size: 50px;
+    color: white;
 }
 
 #gems {
@@ -196,6 +203,7 @@ body {
     font-size: 50px;
     margin: 0;
     display: inline-block;
+    color: white;
 }
 
 #msg {
@@ -203,4 +211,13 @@ body {
     font-size: 50px;
     margin: 0;
     display: inline-block;
+    color: white;
+}
+
+#msg2 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+    margin: 0;
+    display: inline-block;
+    color: white;
 }
